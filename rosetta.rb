@@ -5,11 +5,11 @@
 class Rosetta < Formula
   desc ""
   homepage "https://github.com/userosettadev/rosetta-cli"
-  version "0.0.18"
+  version "0.0.19"
 
   on_macos do
-    url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.18/rosetta-cli_0.0.18_darwin_all.tar.gz"
-    sha256 "756ace1baa2ecef907941c8a2d0e2bf6f8bd9903e665d98cee1a9377b05f0425"
+    url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.19/rosetta-cli_0.0.19_darwin_all.tar.gz"
+    sha256 "511eb79a017c6ebd42fd0e181d86866fc7fe7ebf43930ed9be4973c9649ac300"
 
     def install
       bin.install "rosetta"
@@ -18,16 +18,16 @@ class Rosetta < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.18/rosetta-cli_0.0.18_linux_amd64.tar.gz"
-      sha256 "ce5faf6aec393530140c2e15cfc16e7ee3d7fd2c4d98601cd5f78a430e962cbf"
+      url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.19/rosetta-cli_0.0.19_linux_amd64.tar.gz"
+      sha256 "f8ab5037c9bc2b81f12a5aa2804d2bc1b25e7793a7936c25fa5013523e3e308a"
 
       def install
         bin.install "rosetta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.18/rosetta-cli_0.0.18_linux_arm64.tar.gz"
-      sha256 "19809df8506b3e87a052e7b1df9e817b82ec35ef1089c95a29fa723df941debb"
+      url "https://github.com/userosettadev/rosetta-cli/releases/download/v0.0.19/rosetta-cli_0.0.19_linux_arm64.tar.gz"
+      sha256 "f4ecb1c3cee850a7c2f483b92981d4f659a3c3748593450551bb0c6800caeee6"
 
       def install
         bin.install "rosetta"
